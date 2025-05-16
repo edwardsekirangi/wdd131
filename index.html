@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page Commerce">
+    <meta name="author" content="Sekirangi Edward">
+
+  <!-- Meta and facebook debugging -->
+    <meta property="og:title" content="Sekirangi Edward Home Page - Official Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://edwardsekirangi.github.io/wdd231/chamber/images">
+    <meta property="og:url" content="https://edwardsekirangi.github.io/wdd231/chamber/index.html">
+    <meta property="og:description" content="Welcome to the official website of Your Chamber of Commerce. Stay updated with events, news, and local business resources.">
+    <meta property="og:site_name" content="Your Chamber of Commerce">
+    <title>Sekirangi Edward's Home Page</title>
+  <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="styles/chamber.css" >
+    <!-- Favicon link -->
+    <link rel="icon" type="image/png" href="chamber/images/favicon.png">
+  <!-- JavaScript (using defer) -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="index-header">
+            <img src="images/profile.webp" alt="Logo" width="100">
+            <span class="the-name">Sekirangi Edward</span>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chamber/index.html">Chamber Home</a></li>
+                <li><a href="chamber/directory.html">Directory</a></li>
+                <li><a href="#membership">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger"></div>
+        </nav>
+    </header>
+
+  <main>
+    <!-- Home heading -->
+    <h1 class="eading">Home</h1>
+    <!-- About Section -->
+    
+     <div class="section-div">
+        <section class="grid-img">
+            <h2>Murchison Falls, Uganda</h2>
+            <img src="images/uganda.jpg" alt="reasons to come to ug" width="400">
+        </section>
+          <!-- Projects Section -->
+        <section id="courses">
+            <h2>Projects</h2>
+            <p>Details about the project go here.</p>
+        </section>
+        <dialog id="course-details">
+          <button id="closeModal">Close</button>
+        </dialog>
+     </div>
+    
+    <!-- Courses Section -->
+    <section>
+      <h2 id = "butn-heading">Courses</h2>
+      <!-- Dynamic course cards will be generated here -->
+
+      <div id="courseCards"></div>
+      <!-- Course Filter Buttons -->
+      <div id="courseFilters">
+        <button id="all-btn">All Courses</button>
+        <button id="wdd-btn">WDD Courses</button>
+        <button id="cse-btn">CSE Courses</button>
+      </div>
+      <!-- Display total credits dynamically -->
+      <div id="totalCredits">
+        Total Credits: <span id="credits"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    
+    <p class="small-name">&copy; <span id="currentyear"></span>🦇 Sekirangi Edward 🦇, Uganda Kampala</p>
+    <p id="lastModified"></p>
+    
+  </footer>
+</body>
+</html>
