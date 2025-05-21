@@ -8,12 +8,12 @@
 
 /* The header */
 header {
-    display: grid;
-    grid-template-columns: 4fr 3fr 2fr;
+    /* display: grid;
+    grid-template-columns: 4fr 3fr 2fr; */
     align-items: center;
-    background-color: #000000;
+    background-color: black;
     color: #d9d9d9;
-    padding: 1rem;
+    padding: 2rem;
     gap: 1rem;
 }
 
@@ -59,7 +59,7 @@ nav ul {
     gap: 1.5rem;
     margin: 0;
     padding: 0;
-    justify-content: end;
+    /* justify-content: end; */
 }
 
 nav ul li a {
@@ -161,7 +161,12 @@ nav a:hover {
     background-color: #d6d6d6;
     border-radius: 10px 10px 0 0;
 }
-
+.grid-img img{
+    margin-left: 100px;
+}
+.grid-img p{
+    margin-top: 1rem;
+}
 .section-div {
     display: grid;
     grid-template-columns: 1fr 1.5fr;

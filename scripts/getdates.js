@@ -6,3 +6,6 @@ textElement.style.color = 'white';
 const textElement2 = document.getElementById('lastModified');
 textElement2.textContent = `last modified: ${document.lastModified}`;
 textElement2.style.color = 'white';
+
+// const textElement3 = document.getElementById('lastmodified');
+// textElement3.textContent = `last modified: ${document.lastModified}`;
