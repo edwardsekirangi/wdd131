@@ -51,7 +51,7 @@
 
   }
   
-  @media (min-width: 600px) {
+  @media (min-width: 1000px) {
   
     .weather-heading::after {
       content: " ⛅";
@@ -116,7 +116,7 @@
 
 } */
 
-@media (min-width: 600px) and (max-width: 1024px) {
+@media (min-width: 550px) {
     .hero {
       height: 70vh;
       /* padding: 2rem; */
