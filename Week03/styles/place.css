@@ -51,7 +51,7 @@
 
   }
   
-  @media (min-width: 1000px) {
+  @media (min-width: 600px) {
   
     .weather-heading::after {
       content: " ⛅";
@@ -91,7 +91,7 @@
         border-radius: 1rem;
         padding: 1.5rem;
         width: 280px;
-        color: #fff;
+        color: #002701;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -116,7 +116,7 @@
 
 } */
 
-@media (min-width: 550px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .hero {
       height: 70vh;
       /* padding: 2rem; */
@@ -139,7 +139,10 @@
       font-size: 1.3rem;
     }
   
-   
+    .weather p {
+      /* font-size: 1rem; */
+      /* line-height: 1.5; */
+    }
   }
   
   
