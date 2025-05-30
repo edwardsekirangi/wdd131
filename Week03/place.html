@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Norway</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Uganda</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-large.jpg" media="(min-width: 600px)" />
+        <img src="images/hero-small.jpg" alt="Scenic view of Norway" />
+      </picture>
+    </section>
+
+    <div class="weather-card">
+
+        <section class="weather">
+            <h2>Data</h2>
+            <p><strong>Area:</strong> <span>241,038sqkm</span></p>
+            <p><strong>Population:</strong> <span>51,384,894</span></p>
+            <p><strong>Capital:</strong> <span>Kampala</span></p>
+            <p><strong>Languages:</strong> <span>English, Swahili, Luganda</span></p>
+            <p><strong>Currency:</strong> <span>Ugandan Shilling</span></p>
+            <p><strong>Time Zone:</strong> <span>UTC+3</span></p>
+            <p><strong>Calling Code:</strong> <span>+256</span></p>
+            <p><strong>Internet TLD:</strong> <span>.ug</span></p>
+            
+        </section>
+    
+        <section class="weather">
+          <h2 class="weather-heading">Weather</h2>
+          <img src="images/weather.png" alt="Weather icon" class="mobile-icon" />
+          <p><strong>Temperature:</strong> <span id="temperature">45</span> °F</p>
+          <p><strong>Windspeed:</strong> <span id="windspeed">10</span> mph</p>
+          <p><strong>Windchill:</strong> <span id="windChill">Calculating...</span></p>
+        </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
