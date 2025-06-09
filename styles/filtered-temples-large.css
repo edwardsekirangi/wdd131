@@ -1,0 +1,22 @@
+/* temples-large.css */
+
+@media (min-width: 768px) {
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        padding: 0;
+    }
+  
+    #menu {
+        display: none;
+    }
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+      
+    }
+}
+  
