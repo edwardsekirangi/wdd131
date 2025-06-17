@@ -1,0 +1,557 @@
+/* We are setting everything to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Winky Sans", sans-serif;
+    color: #313030;
+}
+
+/* The header */
+header {
+    display: grid;
+    grid-template-columns: 4fr 3fr 2fr;
+    align-items: center;
+    background-color: #182c3f;
+    color: #d9d9d9;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* header styling on index page */
+
+
+.the-name {
+    font-size: 2.5rem;
+    font-family: "DM Serif Text", serif;
+    color: #d9d9d9;
+    margin-left: 20px;
+}
+
+/* Navigation styling using CSS Grid */
+nav ul {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    justify-content: end;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d9d9d9;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+    padding: 1rem;
+}
+
+.current-menu-item {
+    text-decoration:underline;
+    text-decoration-color: #F39C12; /* Change the underline color */
+    text-decoration-thickness: 2px; /* Thicker line */
+    text-underline-offset: 4px;     /* Space between text and underline */
+
+}
+
+nav a:hover {
+    color: #F39C12
+}
+
+.hero {
+    width: 100vw;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    animation: fadeInZoom 1s ease-out forwards;
+    opacity: 0;
+    /* Ensures the image covers the area without stretching */
+}
+.hero h2{
+    width: 70rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.7);  /* Change as needed */
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: center;
+    /* padding: 0.5em; */
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 8px;
+
+}
+.button-group{
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #F39C12; /* Your secondary color */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-right: 1rem;
+}
+
+.hero-button:hover {
+    background-color: #d97904;
+    transform: scale(1.05);
+}
+
+/* Animating the fero images */
+@keyframes fadeInZoom {
+    0% {
+      transform: scale(1.1);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+}
+
+#companies-heading{
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    background-color: rgba(255, 243, 200, 0.5);
+}
+
+.course-card {
+    border: 1px solid #ccc;
+    padding: 1em;
+    background-color: rgb(242, 242, 242);
+}
+
+
+
+footer {
+    background-color: #182c3f;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+  
+#social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3fa2ff;
+    font-size: 14px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    transition: background-color 0.2s, transform 0.2s;
+    text-decoration: none;
+}
+  
+#social-icons a:hover {
+    background-color: #F39C12; /* Secondary color */
+    transform: scale(1.1);
+}
+  
+
+.small-name {
+    color: white;
+}
+
+/* Code for the hamburger menus */
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.section {
+    padding: 3rem 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-size: 1.2rem;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2C3E50;
+}
+
+.program, .event {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-left: 5px solid #F39C12;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1a252f;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: rgba(255, 200, 0, 0.1);
+}
+.card {
+    background: #f2f2f2;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    animation: fadeIn 0.6s ease forwards;
+    background-color: rgba(255, 243, 200, 0.1);
+    opacity: 0;
+    place-items: center;
+}
+.card:hover{
+    background-color: rgba(243, 156, 18, 0.1);
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(20px); }
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background: rgba(0,0,0,0.7);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.modal-content h3 {
+    margin-top: 0;
+}
+
+@keyframes modalbg{
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.close {
+    float: right;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Chamber thank you page design */
+
+.info {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.info p {
+    margin: 0.5rem 0;
+}
+
+/* ????? discover designs????? */
+#second-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.visit-message{
+    padding: 1rem;
+    background-color: rgb(226, 226, 0);
+}
+@keyframes items-case {
+    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; transform: translateY(100px); }
+}
+
+/* SUCCESS STORIES MENU */
+.success-stories {
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+  
+.success-stories h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+  
+.stories-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.story-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out;
+}
+  
+.story-card:hover {
+    transform: translateY(-5px);
+}
+  
+.story-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+  
+.story-card h3 {
+    margin: 0.5rem 0;
+    color: #2c3e50;
+}
+  
+.story-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+  
+/* SMALL SCREENS */
+@media screen and (max-width: 640px) {
+    /* Hamburger menu */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #182c3f;
+        text-align: center;
+        z-index: 999;
+        gap: 1px;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: .6rem;
+    }
+
+    .the-name {
+        font-size: 2rem;
+        font-family: "DM Serif Text", serif;
+        color: #d9d9d9;
+        margin-left: 20px;
+    }
+
+    .section-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #courses {
+        margin-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger::before{
+        content: "\2630";
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active::before{
+        content: "x";
+    }
+
+    /* Chamber of commerce join page */
+
+    .join-flex{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    
+    }
+    
+    .join-flex1{
+        width: 50%;
+        padding: .5rem;
+        width: auto;
+    }
+    .join-flex2{
+        padding: .5rem;
+    }
+    #second-card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .member-case:hover{
+        transform: scale(1);
+    }
+
+    /* SMALL CHANGES */
+    nav ul li a {
+        text-decoration: none;
+        color: #d9d9d9;
+        font-size: 1rem;
+        transition: color 0.2s ease;
+        
+    }
+    nav ul li a:hover {
+        background-color: #30577b;
+    }
+
+    .hero h2{
+        width: 20rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgba(255, 255, 255, 0.7);  /* Change as needed */
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        /* padding: 0.5em; */
+        background-color: rgba(0, 0, 0, 0.3); /* optional: makes text more readable */
+        border-radius: 8px;
+    }
+
+    .button-group{
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -2%);
+        
+    }
+    .hero-button{
+        font-size: 1rem;
+        padding: 10px;
+        margin: 0;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    
+
+}
+
+/* MEDIUM SCREENS */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+
+    nav ul li a {
+        text-decoration: none;
+        color: #d9d9d9;
+        font-size: 1.2rem;
+        transition: color 0.2s ease;
+        padding: 2px;
+    }
+
+    .hero h2{
+        width: 40rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+        color: rgba(255, 255, 255, 0.7);  /* Change as needed */
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+        /* padding: 0.5em; */
+        background-color: rgba(0, 0, 0, 0.3); /* optional: makes text more readable */
+        border-radius: 8px;
+    }
+    .hero-button{
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    margin-right: 5px;
+    font-size: 1.2rem;
+    
+
+    }
+    .button-group{
+        position: absolute;
+        top: 59%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+
+}
